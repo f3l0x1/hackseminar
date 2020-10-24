@@ -71,3 +71,18 @@ print('')
 
 cs_courses = {'History', 'Math', 'Physics', 'CombSci', 'Math'}
 print(cs_courses)
+print('Math' in cs_courses)
+art_courses = {'History', 'Math', 'Art', 'Design'}
+print(cs_courses.intersection(art_courses))
+print(cs_courses.difference(art_courses))
+print(cs_courses.union(art_courses))
+
+print('')
+
+student = {'name': 'Niklas', 'age': '21', 'courses': 'Hackerseminar'}
+print(student)
+print(student['name'])
+student.update({'name': 'Nils', 'age': '24'})
+print(student)
+for key, value in student.items():
+    print(key, value)
